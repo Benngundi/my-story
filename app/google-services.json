@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956213638781",
+    "project_id": "storyhub-a6b5f",
+    "storage_bucket": "storyhub-a6b5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956213638781:android:e93d03c57b8de33d82a314",
+        "android_client_info": {
+          "package_name": "com.example.storyhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956213638781-5ooutjn0vhnciktefmlcsvichnvomn7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQRbexy1L4zEg-U1UwA-6DqqJHnSpIsE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956213638781-5ooutjn0vhnciktefmlcsvichnvomn7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

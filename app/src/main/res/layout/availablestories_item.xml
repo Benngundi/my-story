@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <RelativeLayout
+        android:id="@+id/recycleviewitemholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/roundbackground"
+        android:padding="5dp">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/cardviewimagesinglestory"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="0dp">
+
+            <ImageView
+                android:id="@+id/storyprofilephoto"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/roundbackground"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/street" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardviewimagesinglestory"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp">
+
+            <RelativeLayout
+                android:id="@+id/storyextraheader_onestory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/authorpp_onestory"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/pp"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/storytitle_onestory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toEndOf="@+id/authorpp_onestory"
+                    android:layout_toRightOf="@+id/authorpp_onestory"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Encounter with Him"
+                    android:textColor="#0B0A0A"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/txtBY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storytitle_onestory"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/authorpp_onestory"
+                    android:layout_toRightOf="@+id/authorpp_onestory"
+                    android:text="By:"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/authorname_onestory"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storytitle_onestory"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/txtBY"
+                    android:layout_toRightOf="@+id/txtBY"
+                    android:paddingLeft="2dp"
+                    android:text="Ben Ngundi"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/storyextrabody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storyextraheader_onestory"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:id="@+id/storycontent_onestory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="150dp"
+                    android:text="Good Morning, i pray you are well in the lord. may the lord give you victory in this"
+                    android:textColor="#000000"
+                    android:textSize="11dp"
+                    android:textStyle="italic"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/storyextrafotter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storyextrabody"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="#00BCD4">
+
+                <TextView
+                    android:id="@+id/txtepisode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginRight="44dp"
+                    android:layout_toStartOf="@+id/txttime"
+                    android:layout_toLeftOf="@+id/txttime"
+                    android:text="Eps 1 of 14"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/txttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginRight="33dp"
+                    android:layout_toStartOf="@+id/txttime10"
+                    android:layout_toLeftOf="@+id/txttime10"
+
+                    android:text="21 days ago"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txttime10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginRight="42dp"
+                    android:layout_toStartOf="@+id/displaysubscribe"
+                    android:layout_toLeftOf="@+id/displaysubscribe"
+
+                    android:text="No. of Readers:134"
+                    android:textColor="@color/black"
+                    android:textSize="9dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/displaysubscribe"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginRight="29dp"
+                    android:background="@drawable/subscribebuttonbg"
+                    android:padding="2dp"
+                    android:text="Subscribe"
+                    android:textColor="#4C5CAF"
+                    android:textSize="9dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

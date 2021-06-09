@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showavailablestories">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:id="@+id/log"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mystorylogo3"
+                app:layout_constraintStart_toEndOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profilepic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profiel2"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:background="#00BCD4"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                app:layout_anchor="@+id/appBarLayout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_constraintStart_toEndOf="@+id/toolbar"
+                app:srcCompat="@drawable/ic_baseline_home_24"
+                tools:layout_editor_absoluteY="3dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_anchor="@+id/appBarLayout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:srcCompat="@drawable/search"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <ImageView
+                android:id="@+id/imageViewauthor"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_anchor="@+id/appBarLayout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:srcCompat="@drawable/notification"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <ImageView
+                android:id="@+id/imageViewmarket"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_anchor="@+id/appBarLayout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_constraintStart_toEndOf="@+id/imageViewauthor"
+                app:srcCompat="@drawable/shopping"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_anchor="@+id/appBarLayout"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:srcCompat="@drawable/story"
+                tools:layout_editor_absoluteY="3dp" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="3dp"
+                android:layout_marginTop="-2dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="78dp">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:paddingTop="2dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/searchall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="All"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/searchromance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Romance"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/searchadventure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Adventure"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/fantasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Fantasy"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/searchcomic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="comics"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/FairTale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Fair Tale"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/poetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Poetry"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+            <TextView
+                android:id="@+id/Biography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:minHeight="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/searchbutton"
+                android:text="Biography"
+                android:textColor="#090909"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical">
+            </TextView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </HorizontalScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9A9C9C">
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
